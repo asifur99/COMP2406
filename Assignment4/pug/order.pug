@@ -1,0 +1,35 @@
+
+html
+	head
+		title Order Form
+	
+	body(onload="init()")
+		div(id="hidden" hidden)
+			input(hidden id = "hid2" type="text" value=session)
+		div#href
+			if !session.loggedin
+				a(href="/" id="home" style = {'padding-right':'2px'}) Home
+				| 
+				a(href="/users" id="users" style = {'padding-right':'2px'}) Users
+				|
+				a(href="/registration" id="registration" style = {'padding-left':'4px'}) Registration		
+			else
+				a(href="/" id="home" style = {'padding-right':'2px'}) Home
+				| 
+				a(href="/users" id="users" style = {'padding-right':'2px'}) Users
+				| 
+				a(href="/orderform" id="restaurants" style = {'padding-right':'2px'}) Restaurants
+				|
+				a(href="/logout" id="logout" style = {'padding-right':'2px'}) Logout
+		br
+		br
+		select(id="restaurant-select")
+		br
+		br
+		div(id="info")
+		div(id="main")
+			div(style = {float:'left', width: '10%'} class="column left" id="left" )
+			div(style = {float:'left', width: '25%'} class="column middle" id="middle")
+			div(style = {float:'right', width: '25%'} class="column right" id="right")
+	
+		script(src="orderform.js")

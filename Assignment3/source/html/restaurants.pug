@@ -1,0 +1,16 @@
+html
+	head
+		title restaurants Page
+
+	body
+		include ../handf/header
+		br
+
+		div#main
+			each product in products
+				a(href="restaurants/"+product.id class = "links") #{product.name}
+				br
+				br
+
+		include ../handf/footer
+		

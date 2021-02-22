@@ -1,0 +1,43 @@
+html
+	head
+		title Profile - #{user.username}
+body
+	div(id="hidden" hidden)
+		input(hidden id = "hid" type="text" value={sesuser})
+		input(hidden id = "hid2" type="text" value=session)
+
+	div#name
+		if session.loggedin
+			if sesuser == true
+				if  user.username == session.username
+					h3 Username: #{user.username}
+					h3 Privacy: #{sesuser}
+					label(for = "privacy" style = {'font-size':'18px'} required) Click to enable/disable privacy:
+					input(type = "checkbox" id = "privacy" name = "privacy" value=sesuser)
+					br
+					br
+
+				else
+					h2 You are 
+						span(style = {'color':'red'}) #{session.username} 
+						span trying to access 
+						span(style = {'color':'blue'}) #{user.username}.
+					h3 Please click the link below to go to the login page and log in to the right account or click on your profile named 
+						span(style = {'color':'red'}) #{session.username} 
+						span as the user set this account in private!
+
+					a(href="/" id="home" style = {'padding-right':'2px', 'font-size':'20px'}) Login
+					a(href="/users" id="users" style = {'padding-left':'4px', 'font-size':'20px'}) Users
+			else
+				h3 Username: #{user.username}
+				h3 Privacy: #{sesuser}
+				if(user.username == session.username)
+					label(for = "privacy" style = {'font-size':'18px'} required) Click to enable/disable privacy:
+					input(type = "checkbox" id = "privacy" name = "privacy")
+					br
+					br
+				
+		else
+			h4 Please Login To View Details
+			a(href="/" id="home" style = {'padding-right':'2px'}) Login
+script(src="submit.js")

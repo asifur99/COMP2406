@@ -1,0 +1,34 @@
+html
+	head
+		title Login
+		
+	body
+		div#href
+			if !session
+				a(href="/" id="home" style = {'padding-right':'2px'}) Home
+				| 
+				a(href="/users" id="users" style = {'padding-right':'2px'}) Users
+				|
+				a(href="/registration" id="registration" style = {'padding-left':'4px'}) Registration		
+			else
+				a(href="/" id="home" style = {'padding-right':'2px'}) Home
+				| 
+				a(href="/users" id="users" style = {'padding-right':'2px'}) Users
+				| 
+				a(href="/orderform" id="restaurants" style = {'padding-right':'2px'}) Restaurants
+				|
+				a(href="/logout" id="logout" style = {'padding-right':'2px'}) Logout
+
+		form(action="/login" method="post")
+			h1 Login
+			label(for = "userName" required) Username: 
+			input(type = "text" id = "userName" name = "username")
+			br
+			br
+			label(for = "pass" required) Password: 
+			input(type = "text" id = "pass" name = "password")
+			br
+			br
+			input(type = "submit" id = "login" value="Login" href="/login")
+
+		//include ../handf/footer

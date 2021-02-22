@@ -1,0 +1,25 @@
+html
+	head
+		title addrestaurant Page
+
+	body
+		include ../handf/header
+
+		div#main
+			br
+			label(for = "resName") Restaurant Name: 
+			input(type = "text" id = "resName")
+			br
+			br
+			label(for = "delFee") Delivery Fee: 
+			input(type = "text" id = "delFee")
+			br
+			br
+			label(for = "minOrd") Minimum Order: 
+			input(type = "text" id = "minOrder")
+			br
+			br
+			input(type = "submit" id = "submitres")
+
+		include ../handf/footer
+		script(src = '/client.js')

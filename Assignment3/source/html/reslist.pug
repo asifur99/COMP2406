@@ -1,0 +1,66 @@
+html
+    head
+        title reslist page
+    
+    body(onload="onload()")
+        include ../handf/header
+
+        div(hidden)
+            input(hidden id = "hid" type="text" value=html)
+
+        div
+            h3 Restaurant ID: #{products.id}
+
+            label(for = "namein") Restaurant name: 
+            input(id = "namein" type="text" value=products.name) 
+            br
+            br
+
+            label(for = "minoin") Restaurant Min Order:     
+            input(id = "minoin" type="text" value=products.min_order)
+            br
+            br
+
+            label(for = "delin") Delivery Fee: 
+            input(id = "delin" type="text" value=products.delivery_fee)
+            br
+            br
+            
+            h3 Add Category
+            label(for = "addCattxt") Add Category: 
+            input(type = "text" id = "addCattxt")
+            br
+            br  
+            input(type = "submit" id = "addCat" value="Add Category")
+            br
+            br
+
+            h3 Add Items
+            label(for = "catsel") Choose Category: 
+            select(id="catsel")
+            br
+            br
+            
+            label(for = "itemName") Item Name: 
+            input(id = "itemName" type="text")
+            br
+            br
+
+            label(for = "itemDesc") Item Description: 
+            input(id = "itemDesc" type="text")
+            br
+            br
+
+            label(for = "itemP") Item Price: 
+            input(id = "itemP" type="text")
+            br
+            br
+            input(type = "submit" id = "addItem" value="Add Items")
+    
+        div#menu
+            h3 MENU
+            
+        input(type = "submit" id = "update" value="Save Changes")
+
+        include ../handf/footer
+        script(src = '/list.js')

@@ -1,0 +1,99 @@
+body{
+  background-color: #ccedd2;
+}
+
+select{
+  background-color: #b0eacd;
+}
+
+h1{
+  font-family: 'Crimson Text', serif;
+}
+
+dt{
+  width: 40rem;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 16px;
+}
+
+dd{
+  font-style: italic;
+  padding-bottom: 1rem;
+  margin: 0;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+a{
+  font-family: 'Bitter', serif;
+  font-size: 18px;
+}
+
+.column {
+  float: left;
+  font-family: 'Bitter', serif;
+  font-size: 18px;
+}
+
+.left{
+  width: 10%;
+}
+
+.right {
+  width: 25%;
+}
+
+.middle {
+  width: 65%;
+}
+
+#info{
+  font-family: 'Crimson Text', serif;
+  font-size: 20px;
+}
+
+#restaurant-select{
+  font-family: 'Crimson Text', serif;
+  font-size: 16px;
+}
+
+#submit{
+  background-color: #b0eacd;
+}
+
+.homeH{
+  text-align: center;
+  font-size: 50px;
+  padding-top: 10rem;
+}
+
+.home1{
+  text-align: center;
+  font-size: 25px;
+  color: #4f3961;
+  padding-top: 30rem;
+  text-decoration: none;
+}
+.home1:hover{
+  color: #feb72b;;
+}
+
+.div1{
+  position: fixed;
+  padding-left: 50px;
+  font-family: 'Bitter', serif;
+  font-size: 18px;
+
+}
+.div2{
+  position: absolute;
+  padding-left: 600px;
+  font-family: 'Bitter', serif;
+  font-size: 18px;
+
+}
+.div3{
+  position: absolute;
+  padding-left:1100px;
+  font-family: 'Bitter', serif;
+  font-size: 18px;
+}

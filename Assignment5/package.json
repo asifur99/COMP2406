@@ -1,0 +1,23 @@
+{
+  "name": "assignment5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "database-initializer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "connect-mongodb-session": "^2.3.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "mongodb": "^3.5.6",
+    "mongoose": "^5.9.9",
+    "package.json": "^2.0.1",
+    "path": "^0.12.7",
+    "pug": "^2.0.4",
+    "session": "^0.1.0"
+  }
+}

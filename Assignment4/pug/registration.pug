@@ -1,0 +1,28 @@
+html
+	head
+		title Registration
+
+	body
+		if exist
+			p "Username Exists Try Another name"
+			
+		div#href
+			if !session
+				a(href="/" id="home" style = {'padding-right':'2px'}) Home
+				| 
+				a(href="/users" id="users" style = {'padding-right':'2px'}) Users	
+
+		form(action="/registration" method="post")
+			h1 Registration Page
+			label(for = "userName" required) Username: 
+			input(type = "text" id = "userName" name = "username")
+			br
+			br
+			label(for = "pass" required) Password: 
+			input(type = "text" id = "pass" name = "password")
+			br
+			br
+			
+			input(type = "submit" id = "register" value="Register" href="/registration")
+
+		//include ../handf/footer

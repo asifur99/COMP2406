@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>MMC</title>
+
+  <script src="client.js"></script>
+  <script src="precious.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Bitter|Crimson+Text|Fira+Sans|Libre+Baskerville&display=swap" rel="stylesheet">
+</head>
+
+<body id="body" onload="addName()">
+
+  <div id="divMain">
+    <h1>Misty Mountains Chophouse</h1>
+    <img class="img" src="sh.png" alt="shrek">
+    <form>
+      <select id="sel" onchange="ifClick()">
+        <option>---Select A Restaurant---</option>
+      </select>
+    </form>
+    <p class="p1" id="heading"></p>
+    <p class="p1" id="min_order"></p>
+    <p class="p1" id="delivery_charge"></p>
+  </div>
+</body>
+
+</html>

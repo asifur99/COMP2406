@@ -1,0 +1,101 @@
+body{
+  background-color: #ccedd2;
+}
+
+select{
+  background-color: #b0eacd;
+}
+
+h1{
+  font-family: 'Crimson Text', serif;
+}
+
+dt{
+  width: 40rem;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 16px;
+}
+
+dd{
+  font-style: italic;
+  padding-bottom: 1rem;
+  margin: 0;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+a{
+  font-family: 'Bitter', serif;
+  font-size: 18px;
+}
+
+.img{
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  right: 100px;
+  top: 30px;
+}
+
+.p1{
+  line-height: .25rem;
+  font-family: 'Crimson Text', serif;
+  font-size: 20px;
+}
+
+.menu{
+  font-weight: bold;
+}
+
+#sel{
+  font-family: 'Crimson Text', serif;
+  font-size: 16px;
+}
+
+#div2{
+  position: absolute;
+	width: 35rem;
+	min-height: 50px;
+	height: auto;
+  left:180px;
+  top:13rem;
+}
+
+#div3{
+  position: absolute;
+  right: 10rem;
+  top: 13rem;
+  font-family: 'Bitter', serif;
+  font-size: 18px;
+}
+
+#div4{
+  position:absolute;
+	width: auto;
+  left: 0.5rem;
+  top: 13rem;
+  margin: 0;
+  font-family: 'Bitter', serif;
+  font-size: 20px;
+}
+
+#submit {
+  padding: 8px 16px;
+  font-family: 'Crimson Text', serif;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+#submit:hover {background-color: #3e8e41}
+
+#submit:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}

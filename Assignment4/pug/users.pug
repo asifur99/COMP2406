@@ -1,0 +1,26 @@
+head
+    title Users
+body
+    div#href
+        if !session
+            a(href="/" id="home" style = {'padding-right':'2px'}) Home
+            | 
+            a(href="/users" id="users" style = {'padding-right':'2px'}) Users
+            |
+            a(href="/registration" id="registration" style = {'padding-left':'4px'}) Registration		
+        else
+            a(href="/" id="home" style = {'padding-right':'2px'}) Home
+            | 
+            a(href="/users" id="users" style = {'padding-right':'2px'}) Users
+            | 
+            a(href="/orderform" id="restaurants" style = {'padding-right':'2px'}) Restaurants
+            |
+            a(href="/logout" id="logout" style = {'padding-right':'2px'}) Logout
+
+    div#main
+        h1 Welcome Users!
+        each val in data
+            li
+                if !val.private
+                    a(id=val.id href='/users/'+ val.id) #{val.username}
+            
